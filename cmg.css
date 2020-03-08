@@ -226,14 +226,14 @@ body {
 	}
 	
     #board {
-        width: 228px;
+        width: 285px;
 		border-width: 13px;
     }
     
     .box {
-        width: 55px;
-        height: 79px;
-        line-height: 79px;
+        width: 69px;
+        height: 98px;
+        line-height: 98px;
         font-size: 0;
 		font-weight: normal;
     }
