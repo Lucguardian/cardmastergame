@@ -224,16 +224,18 @@ body {
 	body {
 		width: 100%;
 	}
-	
+
     #board {
-        width: 320px;
-		border-width: 13px;
+        width: 285px;
+        border-width: 13px;
+        background-image: url('Tabu-Card-2.jpg');
+        background-size: cover;
     }
     
     .box {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 69px;
+        height: 98px;
+        line-height: 98px;
         font-size: 0;
 		font-weight: normal;
     }
