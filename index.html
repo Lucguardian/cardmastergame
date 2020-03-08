@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cmg.css">     
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>    
+    <script src="cmg.js"></script>
+    <div class="option-nav">
+        <div id="player-nav">
+            Jogador: <span id="player"></span>
+        </div>
+        <div id="option" class="btn">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span class="tooltiptext">OPÇÕES</span>
+        </div>
+        <div id="undo-btn" class="btn">
+            <i class="fa fa-undo" aria-hidden="true"></i>
+            <span class="tooltiptext">DESFAZER</span>
+        </div>
+    </div>
+    <div id="reserve01">
+        <div class="row">
+            <div class="box" id="box-R01-0-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-1-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-2-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-3-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-4-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-5-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-6-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R01-7-0" carta="" style="">
+            </div>
+        </div>
+    </div>
+    <div id="board">
+        <div id="result" class="hide"></div>
+        <div id="option-menu" class="hide">
+            <div id="back-btn" class="button">VOLTAR</div>
+            <div id="theme-menu">
+                TEMA: <span id="theme-option" class="button"></span>
+            </div>
+            <div id="color-menu">
+                COR: <span id="color-option" class="button"></span>
+            </div>
+            <div id="restart-btn" class="button">NOVO JOGO</div>
+        </div>
+        <div id="game" ng-app="cmg" ng-controller="GameController">
+            <div class="row" ng-repeat="y in widths">
+                <div class="box" ng-repeat="x in widths" ng-attr-id="{{'box-' + x + '-' + y}}" carta="" style="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reserve02">
+        <div class="row">
+            <div class="box" id="box-R02-0-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-1-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-2-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-3-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-4-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-5-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-6-0" carta="" style="">
+            </div>
+            <div class="box" id="box-R02-7-0" carta="" style="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
