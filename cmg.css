@@ -227,7 +227,8 @@ body {
 	
     #board {
         width: 285px;
-		border-width: 13px;
+	border-width: 13px;
+	background: url('Tabu-Card-2.jpg');
     }
     
     .box {
