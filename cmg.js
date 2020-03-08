@@ -447,6 +447,22 @@ $(document).ready(function() {
             box.attr('style', 'background-image: url(\'cards/card-elfo-paladino-red.jpg\'); background-size: cover;');
         } else if (type === 'knight' && color === 'blue') {
             box.attr('style', 'background-image: url(\'cards/card-elfo-paladino-cian.jpg\'); background-size: cover;');
+        } else if (type === 'rook' && color === 'red') {
+            box.attr('style', 'background-image: url(\'cards/card-gargula-red.jpg\'); background-size: cover;');
+        } else if (type === 'rook' && color === 'blue') {
+            box.attr('style', 'background-image: url(\'cards/card-gargula-cian.jpg\'); background-size: cover;');
+        } else if (type === 'bishop' && color === 'red') {
+            box.attr('style', 'background-image: url(\'cards/card-anjo-ishim-red.jpg\'); background-size: cover;');
+        } else if (type === 'bishop' && color === 'blue') {
+            box.attr('style', 'background-image: url(\'cards/card-anjo-ishim-cian.jpg\'); background-size: cover;');
+        } else if (type === 'queen' && color === 'red') {
+            box.attr('style', 'background-image: url(\'cards/card-humana-feiticeira-red.jpg\'); background-size: cover;');
+        } else if (type === 'queen' && color === 'blue') {
+            box.attr('style', 'background-image: url(\'cards/card-humana-feiticeira-cian.jpg\'); background-size: cover;');
+        } else if (type === 'king' && color === 'red') {
+            box.attr('style', 'background-image: url(\'cards/card-humano-mago-red.jpg\'); background-size: cover;');
+        } else if (type === 'king' && color === 'blue') {
+            box.attr('style', 'background-image: url(\'cards/card-humano-mago-cian.jpg\'); background-size: cover;');
         }
 
         box.html(cartasCM[color][type]);
